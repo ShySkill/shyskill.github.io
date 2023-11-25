@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hello.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <title>ShySkill's Website</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Hi there! My name is <b id = "name">ShySkill!</b></h1>
+        <h2>I program in Python mainly </h2>
+        <p id = "desc">I'm ShySkill,  or one of the many aliases you may know me by. I program in Python mainly, but also in other languages that you can check out on my <a id = "github" target="_blank" href="https://github.com/ShySkill">GitHub</a>.
+            
+            </p>
+            <p>
+                Consider checking out my Socials page below!
+            </p>
+        <p>
+            <b>
+                "Knowing the right answer but not saying it out loud"
+            </b>
+        </p>
+    </div>
+    <div class = "image">
+        <img src= "\images\floppa-pfp-suit.png" alt="Floppa image">
+    </div>
+
+   
+
+    <form onsubmit="sendContact">
+        <div class="mb-3">
+            <label for="emailInput" class="form-label">Enter your email address</label>
+            <input type="email" class="form-control" id="emailInput">
+        </div>
+        <div class="mb-3">
+            <label for="messageInput" class="form-label">Enter your message</label>
+            <textarea class="form-control" id="messageInput" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        (This message will be sent to me via discord webhook:
+        expect a response in 3-4 business days)
+    </form>
+
+    <h1 id = "sendmessage">
+        Send me a message ^ 
+    </h1>
+
+    <div class="fixed-bar">
+        <div class="socials">
+            <a href="https://ipchicken.com" target="_blank" class = "social-icon">
+                <img src="\images\floppa-pfp-suit.png" alt="Floppa image" class="social-icon">
+            </a>
+            <a href="https://github.com/ShySkill" target="_blank" class = "social-icon">
+                <img src="\images\github.png" alt="github" class="social-icon">
+            </a>
+            <a href="https://spotify.com" target="_blank" class = "social-icon">
+                <img src="\images\spotify.png" alt="spotify" class="social-icon-dif">
+            </a>
+            <a href="https://www.roblox.com/users/524758030/profile" target="_blank" class = "social-icon">
+                <img src="\images\roblox.png" alt="roblox" class="social-icon">
+            </a>
+            <a href="https://discord.gg/W6dHmtkMcZ" target="_blank" class = "social-icon">
+                <img src="\images\discord.png" alt="discord" class="social-icon-dif">
+            </a>
+            <a href="https://stackoverflow.com/users/16457060/shyskill" target="_blank" class = "social-icon">
+                <img src="\images\stackoverflow.png" alt="stackoverflow" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/@ShySkill" target="_blank" class = "social-icon">
+                <img src="\images\youtube.png" alt="youtube" class="social-icon-dif">
+            </a>
+        </div>  
+    </div>
+
+</body>
+</html>
