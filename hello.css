@@ -54,13 +54,75 @@ p {
     }
 }
 
-
 .image {
-    position: absolute;
-    top: 400px; 
-    left: 50%; 
-    transform: translateX(-50%);
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.image img {
+    width: auto;
+    max-height: 300px; 
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+
+.fixed-bar {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .image {
+        margin: 20px 0;
+    }
+    
+    .image img {
+        max-height: 180px; 
+        max-width: 80%; 
+    }
+    
+    body {
+        padding-bottom: 90px; 
+    }
+}
+
+@media (max-height: 700px) {
+    .image img {
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+    .image {
+        top: -300px; 
+        margin-bottom: 0; 
+    }
+    
+    .content {
+        margin-bottom: 5px !important; 
+    }
+    
+
+    body {
+        padding-bottom: 100px !important;
+    }
+}
+
+
+@media (max-height: 600px) {
+    .image img {
+        max-height: 100px;
+    }
+    
+    body {
+        padding-bottom: 110px;
+    }
 }
 
 
@@ -178,4 +240,90 @@ label {
 input {
     font-family: 'Ubuntu', sans-serif; 
     
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin: 20px auto;
+        padding: 15px;
+        margin-bottom: 150px;
+    }
+    
+    .image {
+        top: 300px;
+    }
+    
+    .image img {
+        max-width: 80%;
+        height: auto;
+    }
+    
+
+.fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.socials {
+    display: inline-flex;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.social-icon, .social-icon-dif {
+    flex: 0 0 auto;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover, .social-icon-dif:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .fixed-bar {
+        padding: 5px 0;
+    }
+    
+    .social-icon, .social-icon-dif {
+        width: 40px;
+        height: 40px;
+        margin: 0 8px;
+    }
+    
+    .content {
+        margin-bottom: 120px;
+    }
+    
+    .image {
+        top: 250px;
+    }
+    
+    .image img {
+        max-width: 70%;
+    }
+}
+    
+    .social-icon, .social-icon-dif {
+        width: 80px;
+        height: 80px;
+        margin: 0 5px;
+        display: inline-block;
+    }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
